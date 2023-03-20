@@ -5,7 +5,7 @@ interface Props {
     completeTask(taskToDelete: string): void
 }
 
-const TodoTask = ({ task, completeTask }: Props) => {
+export const TodoTask = ({ task, completeTask }: Props) => {
     return (
         <div className="task">
             <div className="content">
@@ -16,5 +16,3 @@ const TodoTask = ({ task, completeTask }: Props) => {
         </div>
     )
 }
-
-export default TodoTask
